@@ -1,0 +1,121 @@
+#container_simulateur
+{
+    padding: 90px 19px 0 19px;
+}
+.simulateur_header
+{
+    background-color: #FFE9C2;
+    padding: 32px 28px 30px 20px;
+}
+.simulateur_header div
+{
+    margin: 0 auto;
+}
+.simulateur_header p 
+{
+    max-width: 290px;
+    font-family: nexity-regular;
+    font-size: 16px;
+    margin: 10px auto;
+}
+.simulateur_header div h1
+{
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    background-color: #FFBA4C;
+    font-family: nexity-bold;
+    font-size: 42px;
+}
+.simulateur_action
+{
+    text-align: center;
+    background: linear-gradient(180deg, #FFBA4C 0%, #FFE9C2 100%);
+    padding: 60px 20px;
+}
+.simulateur_action div p
+{
+    margin-bottom: 10px;
+    font-family: nexity-medium;
+    font-size: 24px;
+}
+.simulateur_action div div
+{
+    position: relative;
+    width: 300px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 10px 20px 20px 20px;
+    text-align: initial;
+    background-color: white;
+}
+.simulateur_action div div img
+{
+    position: absolute;
+    right: 25px;
+    bottom: 24px;
+}
+.simulateur_action div div label
+{
+    font-family: nexity-bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.simulateur_action div input
+{
+    width: 255px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #2B2B2B;
+}
+.simulateur_action div input::placeholder
+{
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.cta_simulateur
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px auto ;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background: #D22238;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.btn_simulation
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: nexity-bold;
+   font-size: 18px;
+   border: none;
+   background-color: transparent;
+   text-decoration: underline; 
+}
+.btn_simulation img
+{
+    margin-right: 10px;
+}
+.pinel_style
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #D22238 !important;
+    height: 46px !important;
+    margin-left: 5px;
+    transform: rotate(-1deg);
+    width: fit-content;
+}
+@media screen and (min-width: 1024px)
+{
+    
+}

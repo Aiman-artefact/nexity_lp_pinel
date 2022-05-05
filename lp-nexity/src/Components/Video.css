@@ -1,0 +1,116 @@
+#container_video
+{
+    margin-top: 180px;
+}
+.video_player
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/video_bg.png') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin: 0 auto;
+    height: 38vh;
+    width: 90%;
+    cursor: pointer;
+}
+.video_description
+{
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.video_description h1
+{
+    font-size: 42px;
+    font-family: nexity-bold;
+}
+.video_description h2
+{
+    margin: 14px 0;
+    font-family: nexity-medium;
+    font-size: 24px;
+}
+.video_description p 
+{
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.cta_video
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px auto 36px auto;
+    width: 260px;
+    height: 54px;
+    background: #D22238;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.cta_video img
+{
+    margin-left: 10px;
+}
+
+.video_modal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.closevideo
+{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+@media screen and (min-width: 1024px)
+{
+    #container_video
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 60px;
+    }
+    #container_video > div  
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 0 auto;
+    }
+    .video_player
+    {
+        margin: 0 0 0 auto;
+        width: 677px;
+        height: 381px;
+    }
+    .logo_video
+    {
+        transition: all 500ms;
+        opacity: 0.5;
+    }
+    .video_player:hover > .logo_video
+    {
+        opacity: 1;
+    }
+}
+

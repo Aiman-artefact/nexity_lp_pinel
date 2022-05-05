@@ -1,0 +1,169 @@
+#primo1_invest
+{
+    padding: 60px 0 60px 0;
+}
+.primo1_header
+{
+    width: 335px;
+    margin: 0 auto 20px auto;
+}
+.primo1_header div h1
+{
+    font-family: nexity-bold;
+    font-size: 42px;
+}
+.primo1_header div p
+{
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.primo1_header div > h2
+{
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    background-color: #FFBA4C;
+    font-family: nexity-medium;
+    font-size: 24px;
+}
+.primo1_header div h2:nth-child(2)
+{
+    font-family: nexity-bold;
+    font-size: 24px;
+}
+
+
+.primo1_card
+{
+    width: 335px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #F3F6FF;
+    color: #2B2B2B;
+}
+
+.primo1_card_header
+{
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.primo1_card_header h1
+{
+    width: 190px;
+    margin: 10px auto 0 auto;
+    font-family: nexity-medium;
+    color: #1D1D1D;
+    font-size: 20px;
+}
+.primo1_card_header img
+{
+    width: 50px;
+    height: 50px;
+}
+.primo1_card > .primo1_card_description:nth-child(2)
+{
+    padding-top: 30px;
+}
+.primo1_card_description
+{
+    display: flex;
+    font-family: nexity-regular;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22.4px;
+}
+
+.primo1_card_description img
+{
+    margin-right: 10px;
+    width: 12px;
+    height: 15px;
+}
+
+.primo1_card_description p strong
+{
+    color: #2B2B2B;
+}
+
+.style-300
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #D22238 !important;
+    height: 26px !important;
+    padding: 5px;
+    margin-left: 5px;
+    transform: rotate(-1deg);
+    width: fit-content;
+}
+
+.plus
+{
+    text-align: center;
+    font-family: nexity-bold;
+    font-size: 42px;
+    color: #D22238;
+}
+@media screen and (min-width: 1024px)
+{
+    #primo1_invest
+    {
+        margin: 0 30px 60px 30px;
+    }
+    .primo1_header
+    {
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .primo1_header p
+    {
+        width: auto;
+    }
+    .primo1_header div:nth-child(2)
+    {
+        width: 302px;
+    }
+    .primo1_header h2
+    {
+        margin-bottom: -1px;
+    }
+    .primo1_header div p 
+    {
+        width: 470px;
+    }
+    .primo1_container_cards
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .primo1_card
+    {
+        width: 323px;
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+    .primo1_card_header
+    {
+        padding-bottom: 0;
+    }
+    .primo1_card_description
+    {
+        display: none;
+    }
+    .plus
+     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: nexity-regular;
+        font-size: 32px;
+     }
+}

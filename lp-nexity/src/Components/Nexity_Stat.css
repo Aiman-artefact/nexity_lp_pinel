@@ -1,0 +1,59 @@
+#nexity_stat
+{
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #FFE9C2;
+}
+
+#nexity_stat h1
+{
+    font-family: nexity-bold;
+    font-size: 42px;
+}
+#nexity_stat > p
+{
+    color: #2B2B2B;
+    font-family: nexity-medium;
+    font-size: 24px;
+    margin: 10px 0 30px 0;
+}
+
+.nexity_stat-card
+{
+    width: 205px;
+    margin: 0 auto;
+    background-color: #FFBA4C;
+    margin-bottom: 1px;
+    padding: 30px 35px;
+}
+.nexity_stat-card p
+{
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.stat-style
+{
+    font-family: nexity-bold;
+    font-size: 42px;
+    color: white;
+    background: #D22238 !important;
+    padding: 5px;
+    height: 46px !important;
+    transform: rotate(-1deg);
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+
+@media screen and (min-width: 1024px)
+{
+    .nexity_stat_cards
+    {
+        display: flex;
+        justify-content: center;
+    }
+    
+}

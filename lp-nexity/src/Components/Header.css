@@ -1,0 +1,200 @@
+.header_mobile
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 80px;
+    padding: 8px 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+header div 
+{
+    display: flex;
+}
+.logo_nexity
+{
+    align-self: center;
+    width: 100px;
+    height: 70px;
+}
+.logo_description
+{
+    align-self: center;
+    width: 80px;
+    height: 8px;
+}
+.logo_menu
+{
+    align-self: center;
+    width: 22px;
+    height: 22px;
+}
+
+.header_nav-resp
+{
+    position: absolute;
+    background-color: #D22238;
+    text-align: center;
+    z-index: 5;
+    text-decoration: none;
+    width: 100vw;
+    left: 0px;
+    top: 140px;
+    margin: 0;
+    padding: 0;
+    transform-origin: center top;
+    animation: drop_down ease 300ms;
+}
+.header_nav-resp ul li a
+{
+    color: white;
+}
+.hide
+{
+    display: none !important;
+}
+
+
+/* DESKTOP */
+.laptop
+{
+    display: none ;
+}
+.header_deskt
+{
+    display: none;
+    height: 90px;
+    padding: 20px 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E5E5;
+}
+.header_nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_nav ul
+{
+    display: flex;
+    font-family: nexity-regular;
+    font-size: 16px;
+    width: 425px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header_btn-contact
+ {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 50px;
+ }
+ .header_btn-contact a
+ {
+     display: flex;
+     font-family: nexity-bold;
+     font-size: 18px;
+ }
+ .header_btn-contact a img
+ {
+     margin-right: 10px;
+ }
+.banniere_primo
+{
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    background-color: #D22238;
+    box-shadow: inset 0px -1px 0px #E8E8E8;
+}
+.banniere_primo img
+{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.banniere_primo p
+{
+    
+    font-family: nexity-bold;
+    font-size: 16px;
+}
+.banniere_primo a
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: nexity-regular;
+    font-size: 13px;
+    text-decoration: underline !important;
+}
+.banniere_primo a:hover
+{
+    color: white;
+}
+
+
+
+@media screen and (min-width: 1024px)
+{
+    .laptop
+    {
+        display: block;
+    }
+    .header_deskt
+    {
+        display: flex;
+    }
+    .banniere_primo
+    {
+        display: flex;
+    }
+    .mobile
+    {
+        display: none;
+    }
+    .banniere_primo
+    {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        padding: 15px 30px;
+        color: white;
+        background-color: #D22238;
+        box-shadow: inset 0px -1px 0px #E8E8E8;
+    }
+    .banniere_primo p
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: nexity-bold;
+        font-size: 16px;
+    }
+
+    .banniere_primo a
+    {
+        display: flex;
+    }
+}
+
+@keyframes drop_down {
+    from {transform: scaleY(0);}
+    to {transform: scaleY(1);}
+  }
+
+
+
+
+
+
+
+
+

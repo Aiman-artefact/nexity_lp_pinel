@@ -1,0 +1,57 @@
+#trustpilot
+{
+    padding: 60px 20px 60px 28px;
+}
+.trustpilot_nexity
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 375px;
+    margin-bottom: 20px;
+}
+
+.trustpilot_nexity div h1
+{
+    font-family: nexity-medium;
+    font-size: 24px;
+}
+.trustpilot_nexity div p
+{
+    font-family: nexity-regular;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.trustpilot_nexity div a
+{
+    font-family: nexity-bold;
+    font-size: 16px;
+}
+
+.trustpilot_rating
+{
+    max-width: 375px;
+}
+
+.trustpilot_rating > img
+{
+    margin-bottom: 30px;
+}
+
+.trustpilot_rating div
+{
+    display: flex;
+    align-items: center;
+}
+
+.trustpilot_rating div img:nth-child(1)
+{
+    margin-right: 30px;
+}
+
+.trustpilot_rating div p
+{
+    font-family: nexity-bold;
+    font-size: 24px;
+    margin-right: 10px;
+}

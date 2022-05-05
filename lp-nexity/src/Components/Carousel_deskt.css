@@ -1,0 +1,155 @@
+#carousel_deskt
+{
+    background-color: #F3F6FF;
+    padding: 40px 0 60px 0;
+}
+
+.buttons_deskt
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carousel_deskt div button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background-color: unset;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    border: 1px solid #2B2B2B;
+    border-radius: 3px;
+}
+.carousel_deskt_header 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#carousel_deskt h2
+{
+    text-align: center;
+    line-height: 33.6px;
+    font-family: nexity-medium;
+    font-size: 24px;
+}
+
+.carousel_img-deskt
+{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.logo_primoinvest-deskt
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.carousel-inner
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item2
+{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carousel-item_deskt
+{
+    width: 303px;
+}
+.carousel_city-deskt
+{
+    font-family: nexity-regular;
+    margin: 20px 0 0 0;
+    font-size: 16px;
+}
+.carousel_description-deskt
+{
+    margin: 0;
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.carousel_price-deskt
+{
+    margin: 0;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.carousel_see-deskt
+{
+    font-family: nexity-regular;
+    font-size: 13px;
+    margin: 20px 0px;
+    text-decoration: underline;
+}
+
+.carousel_btn-deskt
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 283px;
+    height: 50px;
+    margin-bottom: 60px;
+    color: #2B2B2B;
+    border: 1.5px solid #2B2B2B;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.btn_deskt
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta_carousel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px auto 36px auto;
+    width: 344px;
+    height: 50px;
+    font-weight: 700;
+    background: #D22238;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.cta_carousel img
+{
+    margin-left: 10px;
+}
+.carousel-control-next,.carousel-control-prev
+{
+    height: 170px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }

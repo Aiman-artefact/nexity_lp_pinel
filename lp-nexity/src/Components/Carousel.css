@@ -1,0 +1,116 @@
+#carousel
+{
+    background-color: #F3F6FF;
+    padding: 40px 0 0 0;
+}
+
+.carousel button
+{
+    color: #2B2B2B;
+}
+#carousel h2
+{
+    width: 334px;
+    text-align: center;
+    margin: 0 auto 12px auto;
+    line-height: 33.6px;
+    font-family: nexity-medium;
+    font-size: 24px;
+}
+
+.carousel_img
+{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.logo_primoinvest
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.carousel-inner
+{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.carousel-item 
+{
+    text-align: center;
+}
+
+.carousel_city
+{
+    font-family: nexity-regular;
+    margin: 20px 0 0 0;
+    font-size: 16px;
+}
+.carousel_description
+{
+    margin: 0;
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.carousel_price
+{
+    margin: 0;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.carousel_see
+{
+    font-family: nexity-regular;
+    font-size: 13px;
+    margin: 20px 0px;
+    text-decoration: underline;
+}
+.position-relative
+{
+    width: 300px;
+    margin: 0 auto;
+}
+.carousel_btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 60px auto;
+    width: 283px;
+    height: 50px;
+    color: #2B2B2B;
+    border: 1.5px solid #2B2B2B;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+.carousel_btn:hover
+{
+    background-color: #2B2B2B;
+    color: #F3F6FF;
+}
+
+.carousel-control-next,.carousel-control-prev
+{
+    height: 170px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
