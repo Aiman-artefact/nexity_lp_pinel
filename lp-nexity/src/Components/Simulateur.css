@@ -9,6 +9,7 @@
 }
 .simulateur_header div
 {
+    width: 300px;
     margin: 0 auto;
 }
 .simulateur_header p 
@@ -94,6 +95,8 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   margin: 0 auto 0 auto;
+   padding: 0;
    font-family: nexity-bold;
    font-size: 18px;
    border: none;
@@ -117,5 +120,55 @@
 }
 @media screen and (min-width: 1024px)
 {
-    
+    #container_simulateur
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .simulateur_header
+    {
+        width: 48vw;
+        padding: 90px 120px;
+    }
+    .simulateur_header p
+    {
+        margin: 10px 0;
+    } 
+    .simulateur_header div
+    {
+        width: 412px;
+        margin:0;
+    }
+    .simulateur_action
+    {
+        width: 48vw;
+    }
+    .simulateur_header-pinel
+    {
+        margin-left: -12px;
+    }
+    .pinel_style
+    {
+        padding: 2px;
+    }   
+    .btn_simulation
+    {
+        margin: 0 ;
+    }
+    .simulateur_action
+    {
+       display: flex;
+       align-items: center;
+       padding: 105px 111px;
+    }
+    .simulateur_action div p
+    {
+        text-align: initial;
+    }
+    .cta_simulateur
+    {
+        width: 124px;
+        align-self: end;
+        
+    }
 }

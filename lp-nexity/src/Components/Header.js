@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState,useEffect} from 'react'
 import './Header.css'
 import logo_nexity from '../images/logo_nexity.svg'
 import logo_menu from '../images/logo_menu.svg'
@@ -7,22 +7,28 @@ import icon_mail from '../images/icon_mail.svg'
 import icon_close from '../images/icon_close.svg'
 
 function Header() {
+  const [hideban,setHideban] = useState(false)
+  
+
   const togglemenu = () => {
       let menu = document.querySelector(".header_nav-resp")
       menu.classList.toggle("hide")
   }
   
   const hidebanniere = () => {
-      let banniere = document.querySelector(".banniere_primo")
-      banniere.classList.toggle("hide")
+      setHideban(true)
   }
   return (
     <>  
-        <div className='banniere_primo'>
-            <img className='laptop' onClick={hidebanniere} src={icon_close} alt='icon close'/>
-            <p>PACK PRIMO INVEST OFFERT AUX 300 PREMIERS RESERVATAIRES JUSQU'AU 17 JUILLET 2022 !</p>
+        {
+            hideban ? <></> : 
+            <div className='banniere_primo'>
+                <img className='laptop' onClick={hidebanniere} src={icon_close} alt='icon close'/>
+                <p>PACK PRIMO INVEST OFFERT AUX 300 PREMIERS RESERVATAIRES JUSQU'AU 17 JUILLET 2022 !</p>
             <a className='laptop' href='#'>En savoir plus</a>
         </div>
+        }
+        
         <header className='header_mobile mobile'>
             <div>
                 <img className='logo_nexity' src={logo_nexity} alt='logo nexity' />

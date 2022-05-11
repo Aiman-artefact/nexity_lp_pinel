@@ -1,4 +1,4 @@
-import {React,useEffect} from 'react'
+import {React,useEffect,useState} from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './Hero_banner.css'
@@ -6,10 +6,11 @@ import logo_inclusive from '../images/pack_inclusive.svg'
 import arrow_btn from '../images/arrow_carousel.svg'
 
 function Hero_banner() {
-
+  
   useEffect(() => { 
     AOS.init();
     AOS.refresh();
+
    }, [])
   return (
     <section id='container_hero_banner'>

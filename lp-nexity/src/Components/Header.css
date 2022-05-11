@@ -1,6 +1,7 @@
 .header_mobile
 {
     display: flex;
+    background-color: white;
     flex-direction: row-reverse;
     justify-content: space-between;
     height: 80px;
@@ -151,6 +152,9 @@ header div
     .header_deskt
     {
         display: flex;
+        width: 100vw;
+        z-index: 100;
+        background-color: white;
     }
     .banniere_primo
     {

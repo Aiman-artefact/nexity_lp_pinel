@@ -12,8 +12,6 @@ function MyComponent() {
       },
   });
 
-  console.log(zoomLevel);
-
   return null
 }
 
