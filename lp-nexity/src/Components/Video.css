@@ -43,21 +43,21 @@
 }
 .cta_video
 {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    margin: 20px auto 36px auto;
-    width: 260px;
-    height: 54px;
-    background: #D22238;
-    border-radius: 3px;
+    margin: 20px auto 20px auto;
+    padding: 0;
     font-family: nexity-bold;
     font-size: 18px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline; 
 }
 .cta_video img
 {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .video_modal

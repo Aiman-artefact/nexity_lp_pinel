@@ -2,12 +2,12 @@ import {React,useEffect,useRef,useState} from 'react'
 import './Zoom.css'
 import { MapContainer, TileLayer, useMap,Marker,Popup,Polygon,GeoJSON,useMapEvents,ImageOverlay,SVGOverlay} from 'react-leaflet'
 import L, { map,LatLngBounds } from 'leaflet'
-import fullmap from '../../images/map/fullmap.svg'
+import fullmap from '../../images/map_test.png'
 import arrow from '../../images/arrow_carousel.svg'
 
 
 
-function Zoom({region}) {
+function Zoom({region,toggleform}) {
  const [stylezoom,setStylezoom] = useState(false) 
  const test = useMap()
  const boundsMap = new LatLngBounds([42.3599198,-4.76411],[ 51.0999198,8.2170411])
@@ -139,7 +139,7 @@ function Zoom({region}) {
           <div id='legend_description'>
             <p id='title_map'><strong>Hauts de France</strong></p>
             <p id='price_map'>A partir de  169 479 €</p>
-            <button onClick={() => {console.log("dffd")}} className='grow_spin cta_map '>Être contacté <img src={arrow} /></button>
+            <button onClick={toggleform} className='grow_spin cta_map '>Être contacté <img src={arrow} /></button>
           </div>
         </div>
     </>

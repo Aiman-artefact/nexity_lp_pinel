@@ -3,10 +3,10 @@ import './Carousel.css'
 import carousel_test from '../images/carousel_test.png'
 import logo_primo from '../images/primo_invest.svg'
 
-function Carousel() {
+function Carousel({toggleform}) {
   return (
     <section id='carousel'>
-        <h2>Découvrez plus de 2000 de nos logements éligibles au dispositif Pinel.</h2>
+        <h2>Découvrez notre sélection d'appartements éligibles au Pinel partout en France.</h2>
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -18,8 +18,7 @@ function Carousel() {
                     <p className='carousel_city'>MONTPELLIER (34)</p>
                     <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                     <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                    <p className='carousel_see'>Voir le bien</p>
-                    <div className='carousel_btn'>Être contacté</div>
+                    <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                 </div>
                 <div class="carousel-item">
                     <div className='position-relative'>
@@ -29,8 +28,7 @@ function Carousel() {
                     <p className='carousel_city'>MONTPELLIER (34)</p>
                     <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                     <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                    <p className='carousel_see'>Voir le bien</p>
-                    <div className='carousel_btn'>Être contacté</div>
+                    <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                 </div>
                 <div class="carousel-item">
                     <div className='position-relative'>
@@ -40,8 +38,7 @@ function Carousel() {
                     <p className='carousel_city'>MONTPELLIER (34)</p>
                     <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                     <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                    <p className='carousel_see'>Voir le bien</p>
-                    <div className='carousel_btn'>Être contacté</div>
+                    <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

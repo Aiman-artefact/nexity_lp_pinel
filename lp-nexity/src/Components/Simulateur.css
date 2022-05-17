@@ -2,6 +2,7 @@
 {
     padding: 90px 19px 0 19px;
 }
+
 .simulateur_header
 {
     background-color: #FFE9C2;
@@ -65,6 +66,8 @@
 .simulateur_action div input
 {
     width: 255px;
+    font-family: nexity-regular;
+    font-size: 16px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -107,6 +110,12 @@
 {
     margin-right: 10px;
 }
+#error_compa
+{
+    color:red;
+    font-family: nexity-regular;
+    font-size: 12px;
+}
 .pinel_style
 {
     display: inline-flex;
@@ -118,9 +127,132 @@
     transform: rotate(-1deg);
     width: fit-content;
 }
+
+.simulateur_start
+{
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #FFBA4C 0%, #FFE9C2 100%);
+    border-radius: 3px;
+    animation: fade ease 300ms;
+}
+.budget_start
+{
+    position: relative;
+    width: 300px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 10px 20px 20px 20px;
+    text-align: initial;
+    background-color: white;
+}
+.budget_start img
+{
+    position: absolute;
+    right: 25px;
+    bottom: 24px;
+}
+.budget_start label
+{
+    font-family: nexity-bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.budget_start input
+{
+    width: 255px;
+    font-family: nexity-regular;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #2B2B2B;
+}
+.calcul_field
+{
+    margin-bottom: 20px;
+}
+.calcul_field > p
+{
+    margin-bottom: 10px;
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+.calcul_field p strong
+{
+    font-size: 24px;
+}
+.defiscal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: white;
+}
+.defiscal p
+{
+    font-family: nexity-bold;
+    font-size: 38px;
+}
+.total_economy
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 90px;
+    margin: 0 auto;
+    background: #FFBA4C;
+}
+.total_economy p
+{
+    font-family: nexity-bold;
+    font-size: 38px;
+}
+.btn_retry
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    font-family: nexity-bold;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline; 
+}
+.btn_retry img
+{
+    margin-right: 10px;
+}
+.cta_simulateur-start
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px auto ;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background: #D22238;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+
+
 @media screen and (min-width: 1024px)
 {
     #container_simulateur
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .simulateur_home
     {
         display: flex;
         justify-content: center;
@@ -141,6 +273,9 @@
     }
     .simulateur_action
     {
+        display: flex;
+        align-items: center;
+        padding: 105px 0px 105px 111px;
         width: 48vw;
     }
     .simulateur_header-pinel
@@ -155,12 +290,6 @@
     {
         margin: 0 ;
     }
-    .simulateur_action
-    {
-       display: flex;
-       align-items: center;
-       padding: 105px 111px;
-    }
     .simulateur_action div p
     {
         text-align: initial;
@@ -171,4 +300,17 @@
         align-self: end;
         
     }
+
+    .container_fields
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calcul_field p strong
+    {
+        font-family: nexity-regular;
+        font-size: 16px;
+    }
 }
+

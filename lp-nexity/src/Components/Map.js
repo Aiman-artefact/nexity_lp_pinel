@@ -7,7 +7,7 @@ import MyComponent from './Map_utils/MyComponent'
 import Zoom from './Map_utils/Zoom'
 import idf from '../images/map/idf.svg'
 
-function Map() {
+function Map(props) {
   const [map, setMap] = useState(null);
   
   return (
@@ -19,7 +19,7 @@ function Map() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           
-          <Zoom region={region} />
+          <Zoom toggleform={props.toggleform} region={region} />
           
           <MyComponent />
         </MapContainer>

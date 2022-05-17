@@ -1,0 +1,35 @@
+footer
+{
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111111;
+}
+footer a
+{
+    color: white;
+    font-family: nexity-medium;
+    font-size: 10px;
+}
+footer a:hover
+{
+    color: white;
+}
+footer span
+{
+    margin: 0 10px
+}
+
+@media screen and (max-width: 1024px)
+{
+    footer a:nth-child(1),footer a:nth-child(5),footer a:nth-child(7)
+    {
+        display: none;
+    }
+    footer span
+    {
+        display: none;
+    }
+}

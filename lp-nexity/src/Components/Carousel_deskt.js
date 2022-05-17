@@ -5,11 +5,11 @@ import logo_primo from '../images/primo_invest.svg'
 import arrow_btn from '../images/arrow_carousel.svg'
 
 
-function Carousel_deskt() {
+function Carousel_deskt({toggleform}) {
   return (
     <section id='carousel_deskt'>
         <div className='carousel_deskt_header'>
-            <h2>Découvrez plus de 2000 de nos logements éligibles au dispositif Pinel.</h2>
+            <h2>Découvrez notre sélection d'appartements éligibles au Pinel partout en France.</h2>
             <div className='buttons_deskt'>
                 <button onClick={() => {document.querySelector("[data-bs-slide='prev']").style.opacity = "1"; document.querySelector("[data-bs-slide='next']").style.opacity = "0.5"}} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <i class="arrow left" aria-hidden="true"></i>
@@ -36,8 +36,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                         <div className='carousel-item_deskt'>
                             <div className='position-relative'>
@@ -47,8 +46,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                         <div className='carousel-item_deskt'>
                             <div className='position-relative'>
@@ -58,8 +56,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                         <div className='carousel-item_deskt'>
                             <div className='position-relative'>
@@ -69,8 +66,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                     </div>
                 </div>
@@ -85,8 +81,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                         <div className='carousel-item_deskt'>
                             <div className='position-relative'>
@@ -96,8 +91,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                         <div className='carousel-item_deskt'>
                             <div className='position-relative'>
@@ -107,8 +101,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                         <div className='carousel-item_deskt'>
                             <div className='position-relative'>
@@ -118,8 +111,7 @@ function Carousel_deskt() {
                             <p className='carousel_city'>MONTPELLIER (34)</p>
                             <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
                             <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <p className='carousel_see'>Voir le bien</p>
-                            <div className='carousel_btn'>Être contacté</div>
+                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
                         </div>
                     </div>
                 </div>
@@ -127,7 +119,7 @@ function Carousel_deskt() {
             </div>
         </div>
 
-        <button className='grow_spin cta_carousel'>Je découvre tous les appartements <img src={arrow_btn} alt='arrow'/></button>
+        <button onClick={toggleform} className='grow_spin cta_carousel'>Je découvre tous les appartements <img src={arrow_btn} alt='arrow'/></button>
     </section>
   )
 }

@@ -1,7 +1,9 @@
-import React from 'react'
+import {React,useState} from 'react'
+import Form from './Form'
 import './Primo2_invest.css'
 
-function Primo2_invest() {
+function Primo2_invest(props) {
+
   return (
     <section id='primo2_invest'>
         <div className='container_primo2_header'>
@@ -17,9 +19,8 @@ function Primo2_invest() {
             <h1>Profitez du pack Primo Invest’ offert </h1>
             <h2>Nexity : le seul promoteur qui accompagne l'investisseur de A à Z !</h2>
             <p>Investissez aujourd’hui pour bénéficier des taux très avantageux du Pinel actuel. Seulement jusqu'au 17 juillet et pour les 300 premiers logements.</p>
-            <button className='grow_spin cta_primo2'>Je profite de l’offre</button>
+            <button onClick={props.toggleform}  className='grow_spin cta_primo2'>Je profite de l’offre</button>
         </div>
-        
     </section>
   )
 }

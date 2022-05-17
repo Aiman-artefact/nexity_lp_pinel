@@ -109,11 +109,30 @@
     font-size: 42px;
     color: #D22238;
 }
+
+.cta_primo1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 60px auto 0px auto ;
+    width: 200px;
+    height: 50px;
+    background: #D22238;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
+}
+.cta_primo1 img
+{
+    margin-left: 10px;
+}
 @media screen and (min-width: 1024px)
 {
     #primo1_invest
     {
-        margin: 0 30px 60px 30px;
+        margin: 0 30px 0px 30px;
     }
     .primo1_header
     {
@@ -146,6 +165,7 @@
     }
     .primo1_card
     {
+        overflow: hidden;
         width: 323px;
         padding: 30px 20px;
         margin-top: 20px;
@@ -153,10 +173,12 @@
     .primo1_card_header
     {
         padding-bottom: 0;
+        transition: all 1000ms;
     }
     .primo1_card_description
     {
-        display: none;
+        display: flex;
+        transition: all 1000ms;
     }
     .plus
      {
@@ -165,5 +187,28 @@
         align-items: center;
         font-family: nexity-regular;
         font-size: 32px;
+     }
+
+     .primo1_card > div:nth-child(2) 
+     {
+        position: absolute;
+        
+        width: 300px;
+        opacity: 0;
+     }
+     .primo1_card:hover > .primo1_card_header
+     {
+        transform: translateY(-200px);
+     }
+     .primo1_card:hover > div:nth-child(2)
+     {
+        opacity: 1;
+        transform: translateY(-100px);
+        transition: all 1000ms;
+     }
+     .primo1_card:hover > .primo1_card_description
+     {
+         display: flex;
+         transform: translateY(-140px);
      }
 }

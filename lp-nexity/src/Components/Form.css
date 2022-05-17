@@ -1,0 +1,186 @@
+#form
+{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px 20px;
+    background: #FFBA4C;
+    color: white;
+    z-index: 100000;
+    overflow-y: scroll;
+    animation: fade ease 300ms;
+}
+
+.form_part1 input
+{
+    width: 80vw;
+    min-height: 58px;
+    margin-right: 90px;
+    font-family: nexity-bold;
+    font-size: 35px;
+    color: black;
+}
+.form_part1 > div
+{
+    margin-bottom: 35px;
+}
+.form_part1 input::placeholder
+{
+    padding-top: 10px;
+    font-family: nexity-bold;
+    font-size: 35px;
+    color: #FFBA4C;
+}
+.form_header
+{
+    width: 90vw;
+}
+.form_header h1
+{
+    font-family: nexity-medium;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.form_header p
+{
+    font-family: nexity-medium;
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+fieldset legend
+{
+    margin-bottom: 50px;
+    font-family: nexity-medium;
+    font-size: 23px;
+}
+fieldset div
+{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+fieldset div label
+{
+    margin-left: 10px;
+    font-family: nexity-medium;
+    font-size: 23px;
+}
+input[type="radio"]
+{
+    width: 25px;
+    height: 25px;
+}
+#offre_nexity2,#offre_partenaire2
+{
+    margin-left: 81px;
+}
+.form_part2 > div
+{
+    margin-bottom: 46px;
+}
+.form_part2 > p
+{
+    font-family: nexity-medium;
+    font-size: 33px;
+}
+.coord_container
+{
+    display: flex;
+}
+.coord_container input
+{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+.submit_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: nexity-bold;
+    font-size: 15px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    background: #CE162B;
+}
+.submit_btn img
+{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+.close_form
+{
+    cursor: pointer;
+    font-family: nexity-bold;
+    font-size: 20px;
+    position: fixed;
+    color: black;
+    top: 50px;
+    right: 30px;
+}
+
+.error_style
+{
+    display: none;
+    color: red;
+    font-family: nexity-regular;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1024px)
+{
+    #form
+    {
+        padding: 100px 30px 100px 100px;
+    }
+    #form form > div
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    .form_header {
+        width: 55vw;
+    }
+    .form_header p 
+    {
+        margin-bottom: 120px;
+    }
+    .form_header h1 {
+        font-family: nexity-medium;
+        font-size: 51px;
+        margin-bottom: 10px;
+    }    
+    .form_part1 input
+    {
+        width: 45vw;
+    }
+    .close_form {
+        color: black;
+        cursor: pointer;
+        font-family: nexity-bold;
+        font-size: 30px;
+        position: fixed;
+        top: 100px;
+        right: 50px;
+    }
+    .submit_btn
+    {
+        font-size: 30px;
+        width: 286px;
+        height: 57px;
+    }
+    .submit_btn img
+    {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}

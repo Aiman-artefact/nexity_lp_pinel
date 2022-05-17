@@ -6,13 +6,16 @@ import logo_nexity_desktop from '../images/logo_nexity_header-desktop.svg'
 import icon_mail from '../images/icon_mail.svg'
 import icon_close from '../images/icon_close.svg'
 
-function Header() {
+function Header({toggleform}) {
   const [hideban,setHideban] = useState(false)
   
 
   const togglemenu = () => {
-      let menu = document.querySelector(".header_nav-resp")
-      menu.classList.toggle("hide")
+      let menu = document.querySelectorAll(".header_nav-resp")
+      menu.forEach((menu) => {
+        menu.classList.toggle("hide")
+      })
+      
   }
   
   const hidebanniere = () => {
@@ -25,7 +28,7 @@ function Header() {
             <div className='banniere_primo'>
                 <img className='laptop' onClick={hidebanniere} src={icon_close} alt='icon close'/>
                 <p>PACK PRIMO INVEST OFFERT AUX 300 PREMIERS RESERVATAIRES JUSQU'AU 17 JUILLET 2022 !</p>
-            <a className='laptop' href='#'>En savoir plus</a>
+            <a className='laptop' href='#primo1_invest'>En savoir plus</a>
         </div>
         }
         
@@ -54,7 +57,7 @@ function Header() {
                     </ul>
                 </nav>
                 <div className='header_btn-contact'>
-                    <a href='#'>
+                    <a onClick={toggleform} href='#'>
                         <img src={icon_mail} alt='icon mail' />
                         <p>Nous contactez</p>
                     </a>
