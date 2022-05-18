@@ -103,7 +103,7 @@ function Simulateur(props) {
               <input onInput={defiscalisation} type="number" id='budget' name='budget' min="0" placeholder='Votre montant'/>
               <img src={euro} alt='euro logo'/>
               {
-                error_compa ? <p id='error_compa'>Veuillez entrez un montant valide</p> : <></>
+                error_compa ? <p id='error_compa'>Veuillez entrer un montant valide (>100 000€)</p> : <></>
               }
               
             </div>

@@ -23,19 +23,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    width: 194px;
-    height: 54px;
-    background: #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 50px;
+    color: white;
+    margin: 20px auto ;
+    width: 200px;
+    height: 50px;
+    background: #D22238;
+    border-radius: 3px;
+    font-family: nexity-bold;
+    font-size: 18px;
 }
-
 #contact button img
 {
-    margin-right: 10px;
-}
-#contact button.grow_spin:hover
-{
-    color: black;
+    margin-left: 10px;
 }

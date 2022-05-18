@@ -32,9 +32,9 @@ function App() {
       setScrollPosition(position);
   };
    useEffect(() => { 
-
+    updateDimensions();
     window.addEventListener('scroll', handleScroll, { passive: true });
-    if(scrollPosition > 150)
+    if(scrollPosition > 150 && width>1024)
     {
       document.getElementById("header_none").style.display = 'block'
       document.getElementById("header_none").classList.add("header_fixed")
@@ -63,8 +63,20 @@ function App() {
 
   return (
     <main className="App">
-      <div id='header_fixed' data-aos="fade"><Header toggleform={toggleform}/></div>
-      <div id='header_none' data-aos="fade"><Header toggleform={toggleform}/></div>
+      {
+        width > 1024 ?
+        <>
+          <div id='header_fixed' data-aos="fade"><Header toggleform={toggleform}/></div>
+          <div id='header_none' data-aos="fade"><Header toggleform={toggleform}/></div>
+        </>
+        :
+        <>
+          <div data-aos="fade"><Header toggleform={toggleform}/></div>
+          <div id='header_none' data-aos="fade"><Header toggleform={toggleform}/></div>
+        </>
+        
+      }
+      
       <div data-aos="fade"><Hero_banner toggleform={toggleform} /></div>
       <Video />
       <div data-aos="zoom-in"><Simulateur toggleform={toggleform}/></div>
@@ -73,12 +85,12 @@ function App() {
       {
         width>1023 ? <div data-aos="slide-right"><Carousel_deskt toggleform={toggleform}/></div> : <div data-aos="slide-right"><Carousel toggleform={toggleform}/></div>
       }
-      <Map toggleform={toggleform}/>
-      <Nexity_Stat />
+      <div data-aos="fade-up"><Map  toggleform={toggleform} width={width}/> </div>
+      <div data-aos="fade-down"><Nexity_Stat /></div>
       <div data-aos="zoom-in"><Primo2_invest toggleform={toggleform}/></div>
-      <Trustpilot />
-      <Contact toggleform={toggleform}/>
-      <Footer toggleform={toggleform}/>
+      <div data-aos="fade-down"><Trustpilot/></div>
+      <div data-aos="fade-down"><Contact  toggleform={toggleform}/></div>
+      <Footer  toggleform={toggleform}/>
       <Form toggleform={toggleform} showform={showform}/>
     </main>
   );

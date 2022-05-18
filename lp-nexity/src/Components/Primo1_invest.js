@@ -24,6 +24,7 @@ function Primo_invest(props) {
                     <img src={euro} alt="logo euro" />
                     <h1>Financez au mieux votre projet</h1>
                 </div>
+                <span className='line_white'></span>
                 <div>
                     <div className='primo1_card_description'> 
                         <img src={check} alt='check'/>
@@ -44,6 +45,7 @@ function Primo_invest(props) {
                     <img src={house_euro} alt="logo euro" />
                     <h1>Achetez un bien prêt à louer</h1>
                 </div>
+                <span className='line_white'></span>
                 <div>
                     <div className='primo1_card_description'> 
                         <img src={check} alt='check'/>
@@ -64,6 +66,7 @@ function Primo_invest(props) {
                     <img src={hands_check} alt="logo euro" />
                     <h1>Garantissez la location de votre bien</h1>
                 </div>
+                <span className='line_white'></span>
                 <div>
                     <div className='primo1_card_description'> 
                         <img src={check} alt='check'/>
@@ -85,6 +88,7 @@ function Primo_invest(props) {
                     <img src={shield_euro} alt="logo euro" />
                     <h1>Assurez-vous face à l'imprévu</h1>
                 </div>
+                <span className='line_white'></span>
                 <div>
                    <div className='primo1_card_description'> 
                         <img src={check} alt='check'/>

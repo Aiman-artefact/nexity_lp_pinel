@@ -1,6 +1,7 @@
 import {React,useState} from 'react'
 import Form from './Form'
 import './Primo2_invest.css'
+import arrow_btn from '../images/arrow_carousel.svg'
 
 function Primo2_invest(props) {
 
@@ -19,7 +20,7 @@ function Primo2_invest(props) {
             <h1>Profitez du pack Primo Invest’ offert </h1>
             <h2>Nexity : le seul promoteur qui accompagne l'investisseur de A à Z !</h2>
             <p>Investissez aujourd’hui pour bénéficier des taux très avantageux du Pinel actuel. Seulement jusqu'au 17 juillet et pour les 300 premiers logements.</p>
-            <button onClick={props.toggleform}  className='grow_spin cta_primo2'>Je profite de l’offre</button>
+            <button onClick={props.toggleform}  className='grow_spin cta_primo2'>Je profite de l’offre<img src={arrow_btn}/></button>
         </div>
     </section>
   )

@@ -45,7 +45,7 @@
 {
     position: relative;
     width: 300px;
-    height: 90px;
+    height: 100px;
     margin: 0 auto;
     padding: 10px 20px 20px 20px;
     text-align: initial;
@@ -54,8 +54,8 @@
 .simulateur_action div div img
 {
     position: absolute;
-    right: 25px;
-    bottom: 24px;
+    right: 28px;
+    bottom: 30px;
 }
 .simulateur_action div div label
 {
@@ -112,6 +112,7 @@
 }
 #error_compa
 {
+    margin-top: 5px;
     color:red;
     font-family: nexity-regular;
     font-size: 12px;

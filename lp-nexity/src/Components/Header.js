@@ -26,10 +26,10 @@ function Header({toggleform}) {
         {
             hideban ? <></> : 
             <div className='banniere_primo'>
-                <img className='laptop' onClick={hidebanniere} src={icon_close} alt='icon close'/>
+                <img className='' onClick={hidebanniere} src={icon_close} alt='icon close'/>
                 <p>PACK PRIMO INVEST OFFERT AUX 300 PREMIERS RESERVATAIRES JUSQU'AU 17 JUILLET 2022 !</p>
-            <a className='laptop' href='#primo1_invest'>En savoir plus</a>
-        </div>
+                <a className='laptop' href='#primo1_invest'>En savoir plus</a>
+            </div>
         }
         
         <header className='header_mobile mobile'>

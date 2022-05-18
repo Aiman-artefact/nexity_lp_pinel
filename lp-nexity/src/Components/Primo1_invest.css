@@ -46,7 +46,6 @@
 
 .primo1_card_header
 {
-    border-bottom: 1px solid white;
     text-align: center;
     padding-bottom: 30px;
 }
@@ -109,7 +108,15 @@
     font-size: 42px;
     color: #D22238;
 }
-
+.line_white
+{
+    width: 335px;
+    height: 1px;
+    margin-left: -20px;
+    margin-bottom: 30px;
+    background-color: white;
+    display: block;
+}
 .cta_primo1
 {
     display: flex;
@@ -167,6 +174,7 @@
     {
         overflow: hidden;
         width: 323px;
+        height: 180px;
         padding: 30px 20px;
         margin-top: 20px;
     }
@@ -188,11 +196,13 @@
         font-family: nexity-regular;
         font-size: 32px;
      }
-
-     .primo1_card > div:nth-child(2) 
+     .line_white
      {
-        position: absolute;
-        
+         display: none;
+     }
+     .primo1_card > div:nth-child(3) 
+     {
+        position: relative;
         width: 300px;
         opacity: 0;
      }
@@ -200,7 +210,7 @@
      {
         transform: translateY(-200px);
      }
-     .primo1_card:hover > div:nth-child(2)
+     .primo1_card:hover > div:nth-child(3)
      {
         opacity: 1;
         transform: translateY(-100px);

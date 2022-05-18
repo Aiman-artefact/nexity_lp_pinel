@@ -13,7 +13,6 @@ function Trustpilot() {
             <div>
                 <h1>Nexity</h1>
                 <p>Avis 2070  •  Excellent</p>
-                <a>Lire tous les avis</a>
             </div>
         </div>
 
@@ -22,7 +21,6 @@ function Trustpilot() {
             <div>
                 <img src={trustpilot_rating} />
                 <p>4.4/5</p>
-                <img src={info} />
             </div>
         </div>    
     </section>

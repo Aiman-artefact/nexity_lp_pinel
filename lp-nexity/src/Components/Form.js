@@ -101,7 +101,7 @@ function Form(props) {
     {
     showform &&
     <section id='form' className=''>
-        <p onClick={toggleform} className='close_form'>Fermer</p>
+        <p onClick={toggleform} className='close_form'>X</p>
         <div className='form_header'>
             <h1>Vous souhaitez profiter du Pinel actuel et du Pack Sérénité Investisseur ? </h1>
             <p>Nous vous remercions de bien vouloir renseigner vos coordonnées, un conseiller vous accompagnera.</p>

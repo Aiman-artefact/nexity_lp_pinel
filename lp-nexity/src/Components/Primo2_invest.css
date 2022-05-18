@@ -1,6 +1,7 @@
 #primo2_invest
 {
     position: relative;
+    margin-top: 20px;
     z-index: 3;
 }
 .container_primo2_header
@@ -91,6 +92,10 @@
     font-family: nexity-bold;
     font-size: 18px;
 }
+.cta_primo2 img
+{
+    margin-left: 10px;
+}
 .bginvest_box
 {
     position: absolute;
@@ -109,6 +114,7 @@
         flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
+        margin-top: 120px;
         margin-bottom: 60px;
     }
     .container_primo2_header

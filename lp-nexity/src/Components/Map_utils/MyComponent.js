@@ -4,7 +4,7 @@ import L, { map } from 'leaflet'
 
 
 function MyComponent() {
-  const [zoomLevel, setZoomLevel] = useState(5); // initial zoom level provided for MapContainer
+  const [zoomLevel, setZoomLevel] = useState(6); // initial zoom level provided for MapContainer
   
   const mapEvents = useMapEvents({
       zoomend: () => {
