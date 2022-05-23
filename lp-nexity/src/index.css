@@ -62,7 +62,8 @@ button.grow_spin::after {
     transform: scaleX(0);
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 186, 76);
+    background-color: 
+#48ACCF;
     transition: all 0.3s;
     transform-origin: center left;
     z-index: -1;

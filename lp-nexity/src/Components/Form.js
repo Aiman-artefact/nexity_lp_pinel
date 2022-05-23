@@ -104,7 +104,7 @@ function Form(props) {
 
   useEffect(() => {
     
-    axios.post("/ws-rest/contact.json",{
+    axios.post("https://preprod.nexity.fr/ws-rest/contact.json",{
        nom:"Michel",
        prenom:"Albert",
        codepostal:"75200",

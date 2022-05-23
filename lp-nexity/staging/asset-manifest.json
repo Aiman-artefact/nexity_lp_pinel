@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/staging/static/css/main.a28b35cc.css",
-    "main.js": "/staging/static/js/main.47473cce.js",
+    "main.css": "/staging/static/css/main.700b3e86.css",
+    "main.js": "/staging/static/js/main.61b9ebfc.js",
     "static/js/787.0ebbae02.chunk.js": "/staging/static/js/787.0ebbae02.chunk.js",
     "static/media/hero_banner-deskt.png": "/staging/static/media/hero_banner-deskt.f7089a8dee1b50647edb.png",
     "static/media/primoinvest2_img-deskt.png": "/staging/static/media/primoinvest2_img-deskt.66deb70ac7dff4bf384c.png",
@@ -36,12 +36,12 @@
     "static/media/arrow_black.svg": "/staging/static/media/arrow_black.98ba013389488f914d388dac97b50a09.svg",
     "static/media/logo_video.svg": "/staging/static/media/logo_video.c57c57dbbacf68754d0ed768012ccfed.svg",
     "static/media/arrow_carousel.svg": "/staging/static/media/arrow_carousel.7f5ad00aee5a877570e9d6f22ad362eb.svg",
-    "main.a28b35cc.css.map": "/staging/static/css/main.a28b35cc.css.map",
-    "main.47473cce.js.map": "/staging/static/js/main.47473cce.js.map",
+    "main.700b3e86.css.map": "/staging/static/css/main.700b3e86.css.map",
+    "main.61b9ebfc.js.map": "/staging/static/js/main.61b9ebfc.js.map",
     "787.0ebbae02.chunk.js.map": "/staging/static/js/787.0ebbae02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a28b35cc.css",
-    "static/js/main.47473cce.js"
+    "static/css/main.700b3e86.css",
+    "static/js/main.61b9ebfc.js"
   ]
 }

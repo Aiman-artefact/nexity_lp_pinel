@@ -39,7 +39,8 @@
     font-size: 42px;
     font-family: nexity-bold;
     line-height: 46px;
-    background: rgb(255, 186, 76); 
+    background: 
+#48ACCF; 
 }
 
 .calm-style
@@ -104,7 +105,7 @@
     height: 244px;
     top: 0;
     right: 0;
-    background: linear-gradient(140.45deg, #FFBA4C 2.88%, #FFE9C2 91.55%);
+    background: linear-gradient(140.45deg, #48ACCF 2.88%, #D4F2F9 91.55%);
 }
 @media screen and (min-width: 1024px)
 {
@@ -151,7 +152,7 @@
         right: -30px;
         width: 474px;
         height: 295px;
-        background: linear-gradient(269.31deg, #FFBA4C 0%, #FFE9C2 100%);
+        background: linear-gradient(269.31deg, #48ACCF 0%, #D4F2F9 100%);
         transform: rotate(180deg);
     }
 }
