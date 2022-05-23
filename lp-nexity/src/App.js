@@ -17,12 +17,13 @@ import Map from './Components/Map';
 import Form from './Components/Form';
 import Footer from './Components/Footer';
 
+
 function App() {
 
   const [width, setWindowWidth] = useState(0)
   const [scrollPosition, setScrollPosition] = useState(1);
   const [showform,setShowform] = useState(false)
-  
+  const [datalayer,setDatalayer] = useState(0)
   function toggleform () {
     setShowform(!showform)
   }
@@ -32,6 +33,20 @@ function App() {
       setScrollPosition(position);
   };
    useEffect(() => { 
+    if(datalayer == 0)
+    {
+      window.dataLayer.push({
+        "cookie_statut" : "$cookie_statut",
+        "env_site" : "$env_site",
+        "env_working" : "$env_working",
+        "langue" : "$langue",
+        "univers_nexity" : "nfr",
+        "univers" : "b2c",
+        "categorie_page" : "LP Pinel",
+        "nom_page" : "LP Pinel",
+        })
+      setDatalayer(1)  
+    } 
     updateDimensions();
     window.addEventListener('scroll', handleScroll, { passive: true });
     if(scrollPosition > 150 && width>1024)

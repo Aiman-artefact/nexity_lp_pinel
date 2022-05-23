@@ -1,4 +1,5 @@
 import {React,useState,useEffect} from 'react'
+import axios from "axios"
 import './Form.css'
 import arrow_btn from '../images/arrow_carousel.svg'
 
@@ -6,7 +7,8 @@ import arrow_btn from '../images/arrow_carousel.svg'
 function Form(props) {
   
   const {showform,toggleform} = props;
-    
+  const [sendCall,setSendCall] = useState(false)
+  
 
   function isCPValid(input) {
     return /((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}/.test(input);
@@ -94,8 +96,44 @@ function Form(props) {
     }
     else hideError("partenaireErr")
 
+    if(formisvalid)
+    {
+        setSendCall(true)
+    }
   }
 
+  useEffect(() => {
+    
+    axios.post("/ws-rest/contact.json",{
+       nom:"Michel",
+       prenom:"Albert",
+       codepostal:"75200",
+       telephone:"0623456754",
+       email:"test@diginfr.fr" ,
+       Optin_nexity:"0",
+       Optin_partenaire:"0",
+       Optin_autorisation:"1",
+       objet_mail:"TTES FILIALES CNAT FIN PINEL 0522 XXXXXXXXXXXXXXXX",
+       ctcsrc:""
+
+    },
+    {
+        auth : {
+            username : "nexityWSDoc",
+            password : "cW22)\\TJ/QPaOb2LR6"
+        }
+    }
+    )
+    .then((res)=>{
+        console.log(res)
+    })
+    .catch((error)=> {
+        console.log(error)
+    })
+   
+    
+  }, [sendCall])
+  
   return (
     <>
     {

@@ -14,7 +14,7 @@ function Footer(props) {
         <span>/</span>
         <a onClick={showform} href='#'>Contactez-nous</a>
         <span>/</span>
-        <a href='#'>Gestion des cookies</a>
+        <a href="javascript:Didomi.preferences.show()">Gestion des cookies</a>
     </footer>
   )
 }

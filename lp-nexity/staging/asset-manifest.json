@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/staging/static/css/main.a28b35cc.css",
-    "main.js": "/staging/static/js/main.9322a918.js",
+    "main.js": "/staging/static/js/main.47473cce.js",
     "static/js/787.0ebbae02.chunk.js": "/staging/static/js/787.0ebbae02.chunk.js",
     "static/media/hero_banner-deskt.png": "/staging/static/media/hero_banner-deskt.f7089a8dee1b50647edb.png",
     "static/media/primoinvest2_img-deskt.png": "/staging/static/media/primoinvest2_img-deskt.66deb70ac7dff4bf384c.png",
@@ -22,10 +22,10 @@
     "static/media/trustpilot.svg": "/staging/static/media/trustpilot.6e55b19bad2ffc6a2d515d5fd18fb66f.svg",
     "static/media/euro_primo.svg": "/staging/static/media/euro_primo.5355bf6a71fd50c80c6c8ca747514448.svg",
     "static/media/idf.svg": "/staging/static/media/idf.9744c35ab5ef3ed94eb3e76576fbabbf.svg",
+    "index.html": "/staging/index.html",
     "static/media/house_euro.svg": "/staging/static/media/house_euro.4c6ab5b683dc7f4df3572164f0087e85.svg",
     "static/media/pin_legend.svg": "/staging/static/media/pin_legend.41de99d39a0d4a5c1b0175f106aec66c.svg",
     "static/media/shield_euro.svg": "/staging/static/media/shield_euro.4e12cbdbb87b52809164dfd77a873a51.svg",
-    "index.html": "/staging/index.html",
     "static/media/euro.svg": "/staging/static/media/euro.839b2f7b08e383937190f3bf49505452.svg",
     "static/media/icon_mail.svg": "/staging/static/media/icon_mail.f0507b807f10aaa6edb4a8cd40821f42.svg",
     "static/media/retry.svg": "/staging/static/media/retry.9b5b2eee3af3134eee4e25261921fc40.svg",
@@ -37,11 +37,11 @@
     "static/media/logo_video.svg": "/staging/static/media/logo_video.c57c57dbbacf68754d0ed768012ccfed.svg",
     "static/media/arrow_carousel.svg": "/staging/static/media/arrow_carousel.7f5ad00aee5a877570e9d6f22ad362eb.svg",
     "main.a28b35cc.css.map": "/staging/static/css/main.a28b35cc.css.map",
-    "main.9322a918.js.map": "/staging/static/js/main.9322a918.js.map",
+    "main.47473cce.js.map": "/staging/static/js/main.47473cce.js.map",
     "787.0ebbae02.chunk.js.map": "/staging/static/js/787.0ebbae02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a28b35cc.css",
-    "static/js/main.9322a918.js"
+    "static/js/main.47473cce.js"
   ]
 }
