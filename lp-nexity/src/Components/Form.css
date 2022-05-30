@@ -1,5 +1,8 @@
 #form
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -133,14 +136,30 @@ input[type="radio"]
     font-family: nexity-regular;
     font-size: 10px;
 }
-
+.greetings
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px 20px;
+    background: #48ACCF;
+    color: white;
+    z-index: 100000;
+    overflow-y: scroll;
+    animation: fade ease 300ms;
+}
 @media screen and (min-width: 1024px)
 {
     #form
     {
         padding: 50px 30px 50px 100px;
     }
-    #form form > div
+    #form div form > div
     {
         display: flex;
         justify-content: space-around;
@@ -181,5 +200,9 @@ input[type="radio"]
         margin-left: 10px;
         width: 15px;
         height: 15px;
+    }
+    .error_style
+    {
+        font-size: 16px;
     }
 }

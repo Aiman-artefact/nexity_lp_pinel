@@ -8,7 +8,16 @@ import arrow_btn from '../images/arrow_carousel.svg'
 
 function Hero_banner(props) {
   
-  
+  function hideform(){
+   
+    window.dataLayer.push({
+      "event" : "uaevent",
+      'eventCategory' : 'Pinel',
+      'eventAction' : 'clic-CTA',
+      'eventLabel' : 'en_profiter'
+      })
+     props.toggleform()  
+  }
 
   useEffect(() => { 
     AOS.init();
@@ -21,11 +30,15 @@ function Hero_banner(props) {
             <div data-aos="fade-down" data-aos-duration="1000" className='hero_banner_description'>
                 <span>Pour réduire vos</span> <span>impôts mieux</span> <span>vaut <span className='now-style'>maintenant</span></span><span>que jamais.</span>
 
-                <div className='description_deskt'><div>POUR REDUIRE VOS IMPÔTS,</div><div>MIEUX VAUT <span className='now-style'>MAINTENANT</span> QUE JAMAIS.</div></div>
+                <div className='description_deskt'><div>POUR RÉDUIRE VOS IMPÔTS,</div><div>MIEUX VAUT <span className='now-style'>MAINTENANT</span> QUE JAMAIS.</div></div>
 
-                <button onClick={props.toggleform} className='grow_spin cta_hero' >J'en profite <img className='' src={arrow_btn} /></button>
+                <button onClick={hideform} className='grow_spin cta_hero' >J'en profite <img className='' src={arrow_btn} /></button>
             </div>
-            <img data-aos="zoom-in" data-aos-duration="1000" src={logo_inclusive} alt='pack all inclusive' />
+            <div data-aos="zoom-in" data-aos-duration="1000" className='hero_container_inclusive'>
+              <img  src={logo_inclusive} alt='pack all inclusive' />
+              <div>OFFERT</div>
+            </div>
+            
         </div>
 
         <div className='bg_box'></div>

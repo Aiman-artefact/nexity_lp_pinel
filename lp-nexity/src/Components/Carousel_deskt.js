@@ -3,9 +3,42 @@ import './Carousel_deskt.css'
 import carousel_test from '../images/carousel_test.png'
 import logo_primo from '../images/primo_invest.svg'
 import arrow_btn from '../images/arrow_carousel.svg'
-
+import saint_pierre from '../images/Pers_PortSaintPere.png'
+import chemille from '../images/Pers_Chemillé.jpg'
+import lamorlaye from '../images/Pers_Numéro83.jpg'
+import melun from '../images/Pers_Ginkgo.jpg'
+import mantes from '../images/Pers_Emeraude.jpg'
+import marseille from '../images/Marseille.jpg'
+import lyon from '../images/Lyon.jpg'
+import nimes from '../images/Nimes.jpg'
+import nancy from '../images/Nancy.jpg'
+import quimper from '../images/Quimper.jpg'
+import brignolle from '../images/Brignoles.jpg'
+import dijon from '../images/Dijon.jpg'
 
 function Carousel_deskt({toggleform}) {
+
+    function hideform(){
+        
+        window.dataLayer.push({
+          "event" : "uaevent",
+          'eventCategory' : 'Pinel',
+          'eventAction' : 'clic-CTA',
+          'eventLabel' : 'etre_contacte'
+          })
+          toggleform()
+    
+    }
+    
+    function hideformappart(){
+        toggleform()
+        window.dataLayer.push({
+            "event" : "uaevent",
+            'eventCategory' : 'Pinel',
+            'eventAction' : 'clic-CTA',
+            'eventLabel' : 'decouvrir_les_appartements'
+            })
+    }
   return (
     <section id='carousel_deskt'>
         <div className='carousel_deskt_header'>
@@ -28,90 +61,123 @@ function Carousel_deskt({toggleform}) {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div className='carousel-item2'>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={saint_pierre}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>PORT SAINT PERE - 44 </p>
+                            <p className='carousel_price'><strong>à partir de 179 400€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={chemille}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>CHEMILLE - 49</p>
+                            <p className='carousel_price'><strong>à partir de 87 000 €</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={lamorlaye}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>LAMORLAYE - 60</p>
+                            <p className='carousel_price'><strong>à partir de 256 000€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={melun}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>MELUN - 77</p>
+                            <p className='carousel_price'><strong>à partir de 187 678€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div className='carousel-item2'>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={mantes}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>MANTES LA VILLE - 78</p>
+                            <p className='carousel_price'><strong>à partir de 175 000€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={marseille}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>Marseille – 13</p>
+                            <p className='carousel_price'><strong>à partir de 189 900€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={lyon}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>Lyon – 69</p>
+                            <p className='carousel_price'><strong>à partir de 231 000€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
-                        <div className='carousel-item_deskt'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
                             <div className='position-relative'>
-                                <img className='carousel_img' src={carousel_test}  alt="..."  />
+                                <img className='carousel_img' src={dijon}  alt="..."  />
                                 <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
                             </div>
-                            <p className='carousel_city'>MONTPELLIER (34)</p>
-                            <p className='carousel_description'>Programme immobilier neuf • de 1 à 4 pièces</p>
-                            <p className='carousel_price'><strong>(à partir de) 185 000€</strong></p>
-                            <div onClick={toggleform} className='carousel_btn'>Être contacté</div>
+                            <p className='carousel_city'>Dijon – 21</p>
+                            <p className='carousel_price'><strong>à partir de 150 000€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div className='carousel-item2'>
+                        <div onClick={hideform} className='carousel-item_deskt'>
+                            <div className='position-relative'>
+                                <img className='carousel_img' src={nancy}  alt="..."  />
+                                <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
+                            </div>
+                            <p className='carousel_city'>Nancy – 54</p>
+                            <p className='carousel_price'><strong>à partir de 207 000€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
+                        </div>
+                        <div onClick={hideform} className='carousel-item_deskt'>
+                            <div className='position-relative'>
+                                <img className='carousel_img' src={quimper}  alt="..."  />
+                                <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
+                            </div>
+                            <p className='carousel_city'>Quimper – 29</p>
+                            <p className='carousel_price'><strong>à partir de 144 200€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
+                        </div>
+                        <div onClick={hideform} className='carousel-item_deskt'>
+                            <div className='position-relative'>
+                                <img className='carousel_img' src={brignolle}  alt="..."  />
+                                <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
+                            </div>
+                            <p className='carousel_city'>Brignoles – 83</p>
+                            <p className='carousel_price'><strong>à partir de 175 000€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
+                        </div>
+                        <div onClick={hideform} className='carousel-item_deskt'>
+                            <div className='position-relative'>
+                                <img className='carousel_img' src={nimes}  alt="..."  />
+                                <img className='logo_primoinvest' src={logo_primo} alt="logo primo" />
+                            </div>
+                            <p className='carousel_city'>Nimes – 30</p>
+                            <p className='carousel_price'><strong>à partir de 168 800€</strong></p>
+                            <div className='carousel_btn'>Être contacté</div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +185,7 @@ function Carousel_deskt({toggleform}) {
             </div>
         </div>
 
-        <button onClick={toggleform} className='grow_spin cta_carousel'>Je découvre tous les appartements <img src={arrow_btn} alt='arrow'/></button>
+        <button onClick={hideformappart} className='grow_spin cta_carousel'>Je découvre tous les appartements <img src={arrow_btn} alt='arrow'/></button>
     </section>
   )
 }

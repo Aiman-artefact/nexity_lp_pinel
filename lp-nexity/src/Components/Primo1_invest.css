@@ -222,3 +222,14 @@
          transform: translateY(-140px);
      }
 }
+@media screen and (max-width: 365px)
+{
+    .primo1_header
+    {
+        width: initial;
+    }
+    .primo1_card
+    {
+        width: initial;
+    }
+}

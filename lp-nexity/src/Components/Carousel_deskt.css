@@ -1,6 +1,6 @@
 #carousel_deskt
 {
-    background-color: #FFFFFF;
+    background-color: #D4F2F9;
     padding: 40px 0 60px 0;
 }
 
@@ -67,6 +67,7 @@
 .carousel-item_deskt
 {
     width: 303px;
+    cursor:pointer;
 }
 .carousel_city-deskt
 {
@@ -123,10 +124,9 @@
     margin: 20px auto 36px auto;
     width: 344px;
     height: 50px;
-    font-weight: 700;
     background: #D22238;
     border-radius: 3px;
-    font-family: nexity-bold;
+    font-family: nexity-medium;
     font-size: 18px;
 }
 .cta_carousel img

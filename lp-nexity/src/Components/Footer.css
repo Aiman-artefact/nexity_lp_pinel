@@ -24,9 +24,9 @@ footer span
 
 @media screen and (max-width: 1024px)
 {
-    footer a:nth-child(1),footer a:nth-child(5),footer a:nth-child(7)
+    footer 
     {
-        display: none;
+        flex-direction: column;
     }
     footer span
     {

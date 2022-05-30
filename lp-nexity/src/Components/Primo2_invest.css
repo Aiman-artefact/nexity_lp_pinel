@@ -51,7 +51,10 @@
     display: inline-block;
     width: fit-content;
 }
-
+.primoinvest2_inclusive
+{
+    display: none;
+}
 .primo2_description 
 {
     width: 90%;
@@ -115,25 +118,49 @@
         flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
-        margin-top: 120px;
+        margin-top: 60px;
         margin-bottom: 60px;
     }
     .container_primo2_header
     {
         width: auto;
-        height: 462px;
+        height: 550px;
         padding: 0;
     }
     .primoinvest2_header
     {
+        flex-direction: row-reverse;
         width: 674px;
-        height: 462px;
+        height: 550px;
         background: url('../images/primoinvest2_img-deskt.png') ;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; 
     }
-
+    .primoinvest2_inclusive
+    {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .primoinvest2_inclusive img
+    {
+        width: 170px;
+        height: 170px;
+    }
+    .primoinvest2_inclusive div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 40px;
+        background-color: #D22238;
+        font-family: nexity-bold;
+        font-size: 36px;
+        margin: 15px auto 0 auto;
+    }
     .primoinvest2_header_description
     {
         margin: 0 0 25px 25px;
@@ -154,5 +181,13 @@
         height: 295px;
         background: linear-gradient(269.31deg, #48ACCF 0%, #D4F2F9 100%);
         transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 365px)
+{
+    .primoinvest2_header_description span 
+    {
+        font-size: 34px;
     }
 }

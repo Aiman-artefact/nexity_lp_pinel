@@ -1,6 +1,6 @@
 .legend
 {
-    padding: 50px 50px;
+    padding: 0px 50px;
     position: absolute;
     right: 0;
     width: 30vw;
@@ -27,13 +27,17 @@
 #legend_description
 {
     display: none;
-    margin-top: 100px;
     text-align: center;
 }
-.legend_loyer > p 
+.legend_loyer > p:nth-child(3) 
 {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.legend_loyer-header
+{
+    font-size: 15px;
+    margin-top: 10px;
 }
 .box_light
 {
@@ -68,10 +72,10 @@
     align-items: center;
     color: white;
     width: 200px;
-    height: 40px;
+    height: 25px;
     background: #D22238;
     font-family: nexity-bold;
-    font-size: 18px;
+    font-size: 14px;
 }
 .cta_map img
 {
@@ -81,12 +85,12 @@
 {
     margin-bottom: 10px;
     font-family: nexity-medium;
-    font-size: 25px;
+    font-size: 20px;
 }
 #title_map
 {
     font-family: nexity-bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 .leaflet-control-zoom-in,.leaflet-control-zoom-out
 {
@@ -114,6 +118,12 @@
 .btn_reset:hover
 {
     color: #D22238;
+}
+.data_source
+{
+    font-family: nexity-regular;
+    font-size: 12px !important;
+    margin-top: 5px;
 }
 @media screen and (max-width: 1024px)
 {
@@ -151,8 +161,8 @@
     .cta_map
     {
         width: 130px;
-        height: 20px;
-        font-size: 12px;
+        height: 40PX;
+        font-size: 13px;
     }
     #price_map
     {
@@ -171,6 +181,7 @@
     }
     .legend_loyer > p 
     {
+        margin-bottom: 0;
         font-size: 10px;
     }
     .legend_prices p
@@ -180,5 +191,9 @@
     #legend_description
     {
         margin-top: 0;
+    }
+    .data_source
+    {
+        font-size: 8px !important;
     }
 }

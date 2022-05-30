@@ -66,16 +66,21 @@
     #trustpilot
     {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding: 60px 0px 40px 0px;
     }
     .trustpilot_nexity
     {
         max-width: initial;
+        margin: 0 150px 0 0;
+        
     }
     .trustpilot_nexity img
     {
         margin-right: 20px;
-        height: 110px;
+    }
+    .trustpilot_rating
+    {
+        margin: 0;
     }
 }

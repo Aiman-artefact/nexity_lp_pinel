@@ -12,10 +12,12 @@ import idf from '../images/map/idf.svg'
 function Map(props) {
   const [map, setMap] = useState(null);
   
+  
   return (
     <section id='map'>
-      <div>
-        <MapContainer style={{height:600}} center={[46.9, 3.00]} zoom={6} scrollWheelZoom={false} >
+      {props.width>1024?
+        <div>
+        <MapContainer style={{height:600}} center={[47.2, 3.00]} zoom={6} scrollWheelZoom={false} >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -26,7 +28,21 @@ function Map(props) {
           <MyComponent />
         </MapContainer>
       </div>
-        
+      :
+      <div>
+        <MapContainer style={{height:400}} center={[46.9, 3.00]} zoom={4} scrollWheelZoom={false} >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          
+          <Zoom width={props.width} toggleform={props.toggleform} region={region} />
+          
+          <MyComponent />
+        </MapContainer>
+      </div>
+      }
+      
     </section>
   )
 }

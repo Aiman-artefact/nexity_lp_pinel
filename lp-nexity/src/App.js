@@ -25,6 +25,23 @@ function App() {
   const [showform,setShowform] = useState(false)
   const [datalayer,setDatalayer] = useState(0)
   function toggleform () {
+    if(showform == false)
+    {
+      window.dataLayer.push({
+        "cookie_statut": "oui",
+        "categorie_page": "formulaire",
+        "env_site": "web",
+        "env_working": "prod",
+        "event": "virtualpage",
+        "langue": "fr",
+        "nom_page": "FORM_con_pinel",
+        "univers": "b2c",
+        "univers_nexity": "nfr",
+        "user_logged": "non",
+        "virtualpage_url": "/virtual/formulaire/FORM_con_pinel",
+        "virtualpagetitle": "formulaire_pinel"
+      })
+    }
     setShowform(!showform)
   }
 
@@ -35,16 +52,19 @@ function App() {
    useEffect(() => { 
     if(datalayer == 0)
     {
-      window.dataLayer.push({
-        "cookie_statut" : "$cookie_statut",
-        "env_site" : "$env_site",
-        "env_working" : "$env_working",
-        "langue" : "$langue",
+      setTimeout(function() {
+        window.dataLayer.push({
+        "cookie_statut" : "oui",
+        "env_site" : "web",
+        "env_working" : "prod",
+        "langue" : "fr",
         "univers_nexity" : "nfr",
         "univers" : "b2c",
         "categorie_page" : "LP Pinel",
         "nom_page" : "LP Pinel",
         })
+      },2000)
+      
       setDatalayer(1)  
     } 
     updateDimensions();
@@ -98,13 +118,13 @@ function App() {
       <div data-aos="fade-down"><Primo1_invest toggleform={toggleform}/></div>
      
       {
-        width>1023 ? <div data-aos="slide-right"><Carousel_deskt toggleform={toggleform}/></div> : <div data-aos="slide-right"><Carousel toggleform={toggleform}/></div>
+        width>1023 ? <div><Carousel_deskt toggleform={toggleform}/></div> : <div><Carousel toggleform={toggleform}/></div>
       }
       <div data-aos="fade-up"><Map  toggleform={toggleform} width={width}/> </div>
       <div data-aos="fade-down"><Nexity_Stat /></div>
-      <div data-aos="zoom-in"><Primo2_invest toggleform={toggleform}/></div>
-      <div data-aos="fade-down"><Trustpilot/></div>
+      <div><Primo2_invest toggleform={toggleform}/></div>
       <div data-aos="fade-down"><Contact  toggleform={toggleform}/></div>
+      <div data-aos="fade-down"><Trustpilot/></div>
       <Footer  toggleform={toggleform}/>
       <Form toggleform={toggleform} showform={showform}/>
     </main>

@@ -21,13 +21,24 @@ function Header({toggleform}) {
   const hidebanniere = () => {
       setHideban(true)
   }
+
+  function hideform(){
+     
+      window.dataLayer.push({
+        "event" : "uaevent",
+        'eventCategory' : 'Pinel',
+        'eventAction' : 'clic-CTA',
+        'eventLabel' : 'nous_contacter'
+        })  
+        toggleform() 
+  }
   return (
     <>  
         {
             hideban ? <></> : 
             <div className='banniere_primo'>
                 <img className='' onClick={hidebanniere} src={icon_close} alt='icon close'/>
-                <p>PACK PRIMO INVEST OFFERT AUX 300 PREMIERS RESERVATAIRES JUSQU'AU 17 JUILLET 2022 !</p>
+                <p>PACK SÉRÉNITÉ INVEST OFFERT AUX 300 PREMIERS RÉSERVATAIRES JUSQU'AU 17 JUILLET 2022<sup>(1)</sup></p>
                 <a className='laptop' href='#primo1_invest'>En savoir plus</a>
             </div>
         }
@@ -41,7 +52,7 @@ function Header({toggleform}) {
                 <ul>
                     <li><a href='#container_simulateur'>Comparateur Pinel</a></li>
                     <li><a href='#primo1_invest'>Pack offert</a></li>
-                    <li><a href='#carousel'>Appartement éligibles</a></li>
+                    <li><a href='#carousel'>Appartement Pinel</a></li>
                 </ul>
             </nav>
         </header>
@@ -53,13 +64,13 @@ function Header({toggleform}) {
                     <ul>
                         <li><a href='#primo1_invest'>Pack offert</a></li>
                         <li><a href='#container_simulateur'>Comparateur Pinel</a></li>
-                        <li><a href='#carousel_deskt'>Appartement éligibles</a></li>
+                        <li><a href='#carousel_deskt'>Appartement Pinel</a></li>
                     </ul>
                 </nav>
                 <div className='header_btn-contact'>
-                    <a onClick={toggleform} href='#'>
+                    <a onClick={hideform} href='#'>
                         <img src={icon_mail} alt='icon mail' />
-                        <p>Nous contactez</p>
+                        <p>Nous contacter</p>
                     </a>
                 </div>
             </header>

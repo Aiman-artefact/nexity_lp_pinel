@@ -8,9 +8,9 @@ function Footer(props) {
 
   return (
     <footer>
-        <a href='#'>Conditions générales</a>
+        <a href='https://www.nexity.fr/actualites/juridique/offres-commerciales' target='_blank'>Conditions générales</a>
         <span>/</span>
-        <a href='#'>Mentions légales</a>
+        <a href='https://www.nexity.fr/actualites/juridique/offres-commerciales/campagnes-commerciales' target="_blank">Mentions légales</a>
         <span>/</span>
         <a onClick={showform} href='#'>Contactez-nous</a>
         <span>/</span>

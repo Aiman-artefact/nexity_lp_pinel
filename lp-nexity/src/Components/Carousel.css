@@ -1,6 +1,6 @@
 #carousel
 {
-    background-color: #FFFFFF;
+    background-color: #D4F2F9;
     padding: 40px 0 0 0;
 }
 
@@ -114,3 +114,11 @@
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
+
+  @media screen and (max-width: 365px)
+{
+  #carousel h2
+  {
+      width: initial;
+  }
+}

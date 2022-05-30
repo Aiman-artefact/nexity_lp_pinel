@@ -17,6 +17,16 @@ function Zoom({region,toggleform,width}) {
   iconSize: [25,25], // size of the icon
 });
  
+function hideform(){
+  
+  window.dataLayer.push({
+    "event" : "uaevent",
+    'eventCategory' : 'Pinel',
+    'eventAction' : 'clic-CTA',
+    'eventLabel' : 'etre_contacte-map'
+    })
+    toggleform()
+}
   function style() {
     return {
         opacity: 0,
@@ -43,8 +53,8 @@ function Zoom({region,toggleform,width}) {
     if(width>1024)
     {
       test.setView(
-      [46.9, 3.00],
-      6
+      [47.2, 3.00],
+      5
       )
     }
     else
@@ -61,10 +71,10 @@ function Zoom({region,toggleform,width}) {
     if(width>1024)
     {
       setIcon_s([40,40])
-      test.setView(
-        [46.9, 3.00],
-        6
-      )
+      setTimeout(() => {test.setView(
+        [47.2, 3.00],
+        5
+      )},200)
     }
     else if(width<1024)
     {
@@ -260,36 +270,38 @@ function Zoom({region,toggleform,width}) {
         zIndex={-1}/> 
         <div className='legend'>
           <div className='legend_loyer'>
-            <p><strong>Montant moyen du loyer perçu par le propriétaire (par m²)*</strong></p>
+            <p className='legend_loyer-header'><strong>Nexity vous accompagne dans votre stratégie d’investissement</strong></p>
             <div className='legend_prices'>
               <img src={legend_pin}/>
               <p>Nombre de logements Nexity éligibles au  Pinel</p>
             </div>
+            <p >Montant moyen du loyer perçu par le propriétaire (par m²)*<sup>(4)</sup></p>
             <div className='legend_prices'>
-              <div className='box_light'></div>
-              <p>Loyer moyen perçu : de 0€ à 8€ par m²</p>
+              <div className='box_high'></div>
+              <p>Loyer moyen perçu : de 9,20€ à 31€ par m²</p>
             </div>
-            <div className='legend_prices'>
+             <div className='legend_prices'>
               <div className='box_medium'></div>
               <p>Loyer moyen perçu : de 8€ à 9,20€ par m²</p>
             </div>
             <div className='legend_prices'>
-              <div className='box_high'></div>
-              <p>Loyer moyen perçu : de 9,20€ à 31€ par m²</p>
+              <div className='box_light'></div>
+              <p>Loyer moyen perçu : de 0€ à 8€ par m²</p>
             </div>
           </div>
           
           <div id='legend_description'>
             <p id='title_map'><strong>Hauts de France</strong></p>
             <p id='price_map'>A partir de  169 479 €</p>
-            <button onClick={toggleform} className='grow_spin cta_map '>Être contacté <img src={arrow} /></button>
+            <button onClick={hideform} className='grow_spin cta_map '>Être contacté <img src={arrow} /></button>
           </div>  
-            
+          
           
         </div>
         {
           stylezoom && <div onClick={reset_map} className='btn_reset'>Actualiser</div>
         }
+        
     </>
     
 
