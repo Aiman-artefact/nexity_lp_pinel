@@ -260,7 +260,7 @@ function Form(props) {
     ctcsrc()
     if(sendCall == true)
     {
-      $.post("https://investissement-immobilier.nexity.fr/gatewayPP.php",{
+      $.post("https://investissement-immobilier.nexity.fr/gateway.php",{
        nom: document.getElementById("lastname").value,
        prenom: document.getElementById("firstname").value,
        codepostal: document.getElementById("postal").value,

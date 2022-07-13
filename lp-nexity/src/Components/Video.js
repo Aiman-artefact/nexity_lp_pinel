@@ -5,9 +5,31 @@ import './Video.css'
 import logo_video from '../images/logo_video.svg'
 import arrow_btn from '../images/arrow_black.svg'
 
-function Video() {
+function Video(props) {
   const [video,setVideo] = useState(false);
-  const [overlay,setOverlay] = useState(false);
+  const [overlay,setOverlay] = useState(true);
+  const [before , setBefore] = useState(false)
+
+  function showyt()
+  {
+    window.didomiOnReady.push(function (Didomi) {
+       // Get all the vendor purposes
+			  var purposes = Didomi.getVendorById('c:youtube').purposeIds;
+
+			  // Create a "transaction"...
+			  var transaction = Didomi.openTransaction();
+
+			  // ... enable the vendor
+			  transaction.enableVendor('c:youtube');
+
+			  // ... and all his purposes
+			  transaction.enablePurposes(...purposes);
+
+			  // update the new status using "commit"
+			  transaction.commit();
+    })
+
+  }
 
 
   function showvideo() {
@@ -26,9 +48,31 @@ function Video() {
 
 
   useEffect(() => { 
+
+    // Create the "didomiOnReady" listener
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) {
+      // Subscribe to the vendor status : It triggers the listener each time the status is changed for this vendor.
+      Didomi.getObservableOnUserConsentStatusForVendor('c:youtube')
+      .subscribe(function (consentStatus) {
+
+      // Check if the "consentStatus" is true (eg. the user agreed to the vendor & his purposes)
+      if (consentStatus === true) 
+      {
+        setOverlay(false)
+      }
+      else if (consentStatus === false)
+      {
+        setOverlay(true)
+        console.log("Vous devez accepter les cookies youtube")
+      }
+
+      })
+    })
+
     AOS.init();
     AOS.refresh();
-   }, [])
+   }, [overlay])
   return (
     <section id='container_video'>
         <div data-aos="zoom-in">
@@ -42,20 +86,25 @@ function Video() {
         </div>
         
         <div data-aos="slide-right" onClick={showvideo} className='video_player'>
-            <img className='logo_video' src={logo_video} alt='logo video' />
+            {/* <img className='logo_video' src={logo_video} alt='logo video' /> */}
         </div>
         {
           video ? <div className='video_modal'>
-                    {/* {
+                    {
+                      overlay ?
                        <div className='overlay'>
-                          <p>Veuillez accepter les cookie pls</p>
-                          <button className='grow_spin cta_overlay'>Accepter</button>
+                          <p>Vous avez refusé l'utilisation de cookies pour Youtube. Vous pouvez revenir sur vos choix en cliquant sur le bouton accepter.<br/> 
+					                En cliquant sur accepter, vous donnerez vos consentements aux cookies Youtube et aux finalités associées.</p>
+                          <button onClick={showyt} className='grow_spin cta_overlay'>Accepter</button>
                           <div onClick={hidevideo} className='closevideo'>Fermer</div>
                        </div>
-                    } */}
-                    <iframe id='iframe' width="560" height="315" src="https://www.youtube.com/embed/3PS70ctlleg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div onClick={hidevideo} className='closevideo'>Fermer</div>
-                  </div> : <></>
+                       :
+                       <>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/kU-n53C4vQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <div onClick={hidevideo} className='closevideo'>Fermer</div>
+                      </>
+                    } 
+                     </div>: <></>
         }
         
     </section>

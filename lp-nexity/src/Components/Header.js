@@ -38,7 +38,7 @@ function Header({toggleform}) {
             hideban ? <></> : 
             <div className='banniere_primo'>
                 <img className='' onClick={hidebanniere} src={icon_close} alt='icon close'/>
-                <p>PACK SÉRÉNITÉ INVEST OFFERT AUX 300 PREMIERS RÉSERVATAIRES JUSQU'AU 17 JUILLET 2022<sup>(1)</sup></p>
+                <p>PACK SÉRÉNITÉ INVEST OFFERT AUX 300 PREMIERS RÉSERVATAIRES JUSQU'AU 31 AOUT 2022<sup>(1)</sup></p>
                 <a className='laptop' href='#primo1_invest'>En savoir plus</a>
             </div>
         }

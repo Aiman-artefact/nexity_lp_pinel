@@ -19,12 +19,12 @@ function Nexity_Stat() {
   
             <div className='nexity_stat-card'>
                 <div className='stat-style'>1er</div>
-                <p>acteur de l’immobilier en France</p>
+                <p>acteur de l’immobilier en France<sup>(7)</sup></p>
             </div>
 
             <div className='nexity_stat-card'>
                 <div className='stat-style'>1</div>
-                <p>millions de clients particuliers</p>
+                <p>million de clients particuliers<sup>(8)</sup></p>
             </div>
         </div>              
  

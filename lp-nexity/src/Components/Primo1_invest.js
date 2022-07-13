@@ -44,7 +44,7 @@ function Primo_invest(props) {
                     </div>
                     <div className='primo1_card_description'> 
                         <img src={check} alt='check'/>
-                        <p>Frais de courtage Nexity Solution Crédits <strong>offerts<sup>(1)</sup></strong></p> 
+                        <p>Frais de courtage Nexity Solutions <strong>offerts<sup>(1)</sup></strong></p> 
                     </div>
                 </div>
                 

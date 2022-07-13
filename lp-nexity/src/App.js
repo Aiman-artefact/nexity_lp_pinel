@@ -24,6 +24,13 @@ function App() {
   const [scrollPosition, setScrollPosition] = useState(1);
   const [showform,setShowform] = useState(false)
   const [datalayer,setDatalayer] = useState(0)
+  const [overlay,setOverlay] = useState(true);
+
+  function showyt()
+  {
+    setOverlay(false)
+  }
+
   function toggleform () {
     if(showform == false)
     {
@@ -49,7 +56,9 @@ function App() {
       const position = window.pageYOffset;
       setScrollPosition(position);
   };
+
    useEffect(() => { 
+
     if(datalayer == 0)
     {
       setTimeout(function() {
@@ -113,7 +122,7 @@ function App() {
       }
       
       <div data-aos="fade"><Hero_banner toggleform={toggleform} /></div>
-      <Video />
+      <Video showyt={showyt} overlay={overlay} />
       <div data-aos="zoom-in"><Simulateur toggleform={toggleform}/></div>
       <div data-aos="fade-down"><Primo1_invest toggleform={toggleform}/></div>
      
@@ -125,7 +134,7 @@ function App() {
       <div><Primo2_invest toggleform={toggleform}/></div>
       <div data-aos="fade-down"><Contact  toggleform={toggleform}/></div>
       <div data-aos="fade-down"><Trustpilot/></div>
-      <Footer  toggleform={toggleform}/>
+      <Footer  toggleform={toggleform} />
       <Form toggleform={toggleform} showform={showform}/>
     </main>
   );
